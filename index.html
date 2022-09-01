@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mampara - por DevsChile</title>
+    <meta name="title" content="Mampara - por DevsChile">
+    <meta name="description" content="Clon de Glassdoor criollo, pero más humilde y honesto 💪">
+    <meta property="og:image" content="/social.jpg">
+    <meta property="twitter:image" content="/social.jpg">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>[m-mask]{display:none}</style>
+    <link rel="stylesheet" href="node_modules/@picocss/pico/css/pico.min.css">
+  </head>
+  <body id="app" m-mask>
+    <div class="container">
+      <menu title="{{ site.title }}" />
+    </div>
+    <hr>
+    <main class="container">
+      <hgroup>
+        <h2><small>{{ site.description }}</small></h2>
+        <h3>{{ site.copyright }}</h3>
+      </hgroup>
+      <home auth="{{ is_auth }}" m-literal:auth="is_auth" username="{{ user.name }}" useremail="{{ user.email }}" />
+    </main>
+    <foot />
+
+    <script src="https://tally.so/widgets/embed.js"></script>
+    <script src="js/Mutable.min.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.hidden {
+  display: none;
+}
+
+.alert {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #b71c1c;
+  border-radius: 0.25rem;
+  background-color: #11191f;
+}
+
+@media (min-width: 992px) {
+  .review {
+    grid-template-columns: 350px 1fr;
+  }
+
+  .home {
+    grid-template-columns: .5fr;
+    justify-content: center;
+  }
+
+  .average-data {
+    text-align: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .review article {
+    margin: 1rem 0;
+  }
+}
+
+.review details {
+  border-bottom: none;
+}
+
+.review-range th,
+.review-range td {
+  text-align: center;
+}
+
+.review-range td progress {
+  margin-bottom: 0;
+}
+
+.review-addons > div:not(:last-child) {
+  border-bottom: 1px solid #1f2d38;
+}
+
+.review-addons > div h5 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.review-addons > div pre {
+  padding: .5rem;
+  font-size: 16px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  background: none;
+  border-radius: 0;
+}
+
+.container + hr {
+  margin-top: 0;
+}
+
+nav h1 {
+  margin-bottom: 0;
+  font-size: 1.4rem;
+}
+
+footer p {
+  font-size: 8px;
+  text-align: center;
+}
+
+select {
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 0;
+}
+
+details:last-child {
+  margin-bottom: 0;
+}
+
+body > main {
+  padding-bottom: 0;
+}
